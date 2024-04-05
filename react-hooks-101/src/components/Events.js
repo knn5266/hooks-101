@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
 import Event from './event';
+import AppContext from '../contexts/AppContext';
 
 const Events = ({ state, dispatch }) => {
+  const value = useContext(AppContext);
   return (
     <React.Fragment>
       <h4>イベント一覧</h4>
